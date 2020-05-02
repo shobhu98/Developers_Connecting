@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import Spinner from "../layouts/Spinner";
 import {Link} from "react-router-dom";
+
 import {getProfileByID} from "../../actions/profile";
 
 
@@ -10,7 +11,7 @@ import {getProfileByID} from "../../actions/profile";
 const Profile=({getProfileByID,match,profile:{profile,loading},auth})=>{
     useEffect(()=>{
         getProfileByID(match.params.id)
-    },[getProfileByID]);
+    },[getProfileByID,match.params.id]);
 
         return (
             <Fragment>
