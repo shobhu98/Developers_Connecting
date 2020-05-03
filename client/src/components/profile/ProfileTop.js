@@ -27,22 +27,42 @@ status,company,location,
                                 <i className="fas fa-globe fa-2x"></i>
                             </a>
                         )}
+                        {social&& social.twitter&&(
+                            <a href={"https://"+social.twitter} target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-twitter fa-2x"></i>
+                            </a>
+                        )}
+                        {social&& social.facebook&&(
+                            <a href={"https://"+social.facebook} target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-facebook fa-2x"></i>
+                            </a>
+                        )}
 
-                        <Link to={'https://'}target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-twitter fa-2x"></i>
-                        </Link>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-youtube fa-2x"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-instagram fa-2x"></i>
-                        </a>
+                        {
+                            social&&social.linkedin&&(
+                                <a href={"https://"+social.linkedin} target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-linkedin fa-2x"></i>
+                                </a>
+                            )
+                        }
+                        {
+                            social&&social.youtube&&(
+                                <a href={"https://"+social.youtube} target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-youtube fa-2x"></i>
+                                </a>
+                            )
+                        }
+                        {social&&social.instagram&&(
+                            <a href={"https://"+social.instagram} target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-instagram fa-2x"></i>
+                            </a>
+                        )}
+
+
+
+
+
+
                     </div>
                 </div>
             </Fragment>
