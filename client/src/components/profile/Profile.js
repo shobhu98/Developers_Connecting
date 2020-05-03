@@ -5,6 +5,7 @@ import Spinner from "../layouts/Spinner";
 import {Link} from "react-router-dom";
 
 import {getProfileByID} from "../../actions/profile";
+import ProfileTop from "./ProfileTop";
 
 
 
@@ -23,6 +24,9 @@ const Profile=({getProfileByID,match,profile:{profile,loading},auth})=>{
                     profile.user._id &&(<Link to='/edit-profile' className='btn btn-dark' >
                         Edit Profile
                     </Link>)}
+                    <div className="profile-grid my-1">
+                        <ProfileTop  profile={profile}/>
+                    </div>
                 </Fragment>}
             </Fragment>
         );
