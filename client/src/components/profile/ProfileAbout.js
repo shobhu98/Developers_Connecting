@@ -34,6 +34,6 @@ const ProfileAbout = ({profile:{
 
 ProfileAbout.propType={
     profile:PropTypes.object.isRequired,
-}
+};
 
 export default ProfileAbout;
